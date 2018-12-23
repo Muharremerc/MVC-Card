@@ -1,0 +1,136 @@
+﻿@model CardWeb.Models.ProductIndexModel
+@{
+    if (Session["UserId"] != null)
+    { ViewBag.Title = "Index"; }
+}
+
+<div class="col-md-4">
+    <h2>Add New Product</h2>
+    @using (Html.BeginForm("AddNewProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <p> Name <input type="text" name="name" /></p>
+        <p> Price <input type="number" name="price" /></p>
+        <p>
+            <select name="cId">
+                @foreach (var item in Model.C)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            </select>
+        </p>
+        <p>
+            Image <input type="file" name="f" id="f" />
+        </p>
+        <p><input type="submit" name="Submit" id="Submit" value="Add Product" /></p>
+    }
+
+        <h2> </h2>
+    <h2>Add New Category</h2>
+    <p>Name <input type="text" name="cname" id="cname" /></p>
+    <p><a href="javascript:addNewCategory()">Add Category</a>
+
+</div>
+
+
+
+
+
+
+@foreach (var item in Model.P)
+{
+    <div class="col-md-4">
+        <h2>@item.P.Name</h2>
+        <p>
+
+        </p>
+        <p> Price - @item.P.Price</p>
+        <p> ShopId - @item.ShopName</p>
+        <img height="180px" src="../Image/@item.Image" />
+        <p></p>
+        <a href="javascript:deleteProduct(@item.P.Id)">Delete</a>
+    </div>
+}
+
+@section Category
+{
+    @*<li><a href="javascript:AddNewProcut()" style="border-left:inset">Add New Product</a></li>*@
+}
+
+<script>
+
+    function AddNewProcut() {
+        var selector = document.getElementById('category');
+        var A = selector[selector.selectedIndex].value;
+        var formData = new FormData();
+        
+
+        var data = {
+            name: $("#name").val(),
+            price: $("#price").val(),
+            cId: A,
+            file:f
+        };
+
+
+        $.ajax({
+            url: "/Product/AddNewProduct/",
+            dataType: "json",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                
+            }
+        })
+
+
+    }
+    function addNewCategory() {
+      
+        var data = {
+            name: $("#cname").val()
+            
+        };
+        
+        $.ajax({
+            url: "/Product/addNewCategory/",
+            dataType: "json",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+
+            }
+        })
+
+
+    }
+
+    function deleteProduct(Id)
+    {
+
+        var data = {
+            id : Id
+
+        };
+
+        $.ajax({
+            url: "/Product/Delete/",
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                alert("true");
+                window.location.assign("/Product/Index");
+            }
+        })
+
+
+    }
+
+
+
+
+
+</script>

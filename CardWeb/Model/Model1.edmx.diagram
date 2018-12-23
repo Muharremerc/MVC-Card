@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bacb2eb885234b6ebfeafaa3492d62f5" Name="Diagram1">
+        <EntityTypeShape EntityType="MarketModel.Card" Width="1.5" PointX="3.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Category" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Customer" Width="1.5" PointX="3.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.CustomerCard" Width="1.5" PointX="6" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Image" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Pricing" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Product" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.ProductCategory" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.ProductImage" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Shop" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Ticket" Width="1.5" PointX="6" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.TicketProduct" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.Userr" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketModel.UserShop" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="MarketModel.FK_CustomerCard_Card" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_ProductCategory_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_CustomerCard_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Ticket_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_ProductImage_Image1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Pricing_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_Product_Shop" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_ProductCategory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_ProductImage_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_TicketProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_TicketProduct_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_UserShop_Shop" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_TicketProduct_Ticket" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketModel.FK_UserShop_Userr" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

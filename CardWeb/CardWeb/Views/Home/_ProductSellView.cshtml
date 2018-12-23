@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "_ProductSellView";
+}
+
+@model CardWeb.Models.ProductIndexFinishModel
+
+<div class="col-md-4">
+    <h2>Ticket Name - @Model.TicketName</h2>
+    <h2>Name - @Model.TicketCustomer</h2>
+
+    <p><a class="btn btn-default" href="javascript:Finish()">Finish</a></p>
+</div>
+@foreach (var item in Model.P)
+{
+    <div class="col-md-4">
+        <h2>@item.P.Name</h2>
+        <p>
+            @if (item.Image == null)
+            {
+                <img src="../../Image/default.jpg" width="200" height="200">
+            }
+            else
+            {
+                <img src="../../Image/@item.Image" width="200" height="200">
+            }
+
+        </p>
+        <p> Price - @item.P.Price</p>
+        <p> ShopName - @item.ShopName</p>
+        <p><a href="javascript:deleteProduct(@item.P.Id)">Delete</a></p>
+    </div>
+}
+    <script>
+
+        function Finish(id) {
+
+            $.ajax({
+                type: "POST",
+                url: '/Home/Finish',
+                dataType: 'HTML',
+                success: function (data) {
+                    window.location.assign("/Home/Index")
+                },
+                error: function (data) {
+                    alert('Error.');
+                }
+            })
+
+
+        }
+        function deleteProduct(Id) {
+
+            var data = {
+                id:Id
+
+            };
+
+
+            $.ajax({
+                url: "/Home/DeleteProductFromTicket/",
+                dataType: "json",
+                type: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    if (data != 0) {
+                        window.location.assign("../Home/Index")
+
+                    }
+                }
+            })
+
+
+        }
+
+    </script>

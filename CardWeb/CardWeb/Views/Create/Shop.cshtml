@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Shop";
+}
+<!------ Include the above in your HEAD tag ---------->
+<link href="~/Content/cssTest.css" rel="stylesheet" id="bootstrap-css">
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form_main">
+                <h4 class="heading"><strong>Add </strong> Shop <span></span></h4>
+                <div class="form">
+                    <form>
+                        <input type="text" required="" placeholder="Please input your Shop Name" value="" name="sname" id="sname" class="txt">
+                        <input type="text" required="" placeholder="Please input your Name" value="" name="name" id="name" class="txt">
+                        <input type="text" required="" placeholder="Please input your Surname" value="" name="surname" id="surname" class="txt">
+
+                        <input type="text" required="" placeholder="Please input your Username" value="" name="username" id="username" class="txt">
+                        <input type="text" required="" placeholder="Please input your Passowrd" value="" name="password" id="password" class="txt">
+                        <input type="text" required="" placeholder="Please input your Email" value="" name="email" id="email" class="txt">
+                        <input type="text" required="" placeholder="Please input your Phone" value="" name="phone" id="phone" class="txt">
+                        <p></p>
+                        <input class="txt2" type="button" onclick="AddShop()" value="Create" name="Create" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function AddShop() {
+
+        var data = {
+
+            sname: $("#sname").val(),
+            name: $("#name").val(),
+            surname: $("#surname").val(),
+            username: $("#username").val(),
+            password: $("#password").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val()
+
+        };
+
+
+        $.ajax({
+            url: "/Create/AddShop/",
+            dataType: "JSON",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (data) {
+                if (data != null) {
+                    window.location.assign("../Home/Index")
+
+                }
+            }
+        })
+
+
+    }
+
+</script>

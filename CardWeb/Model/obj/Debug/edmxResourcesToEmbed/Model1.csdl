@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Money" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="CustomerCards" Relationship="Self.FK_CustomerCard_Card" FromRole="Card" ToRole="CustomerCard" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductCategories" Relationship="Self.FK_ProductCategory_Category" FromRole="Category" ToRole="ProductCategory" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CustomerCards" Relationship="Self.FK_CustomerCard_Customer" FromRole="Customer" ToRole="CustomerCard" />
+    <NavigationProperty Name="Tickets" Relationship="Self.FK_Ticket_Customer" FromRole="Customer" ToRole="Ticket" />
+  </EntityType>
+  <EntityType Name="CustomerCard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Card" Relationship="Self.FK_CustomerCard_Card" FromRole="CustomerCard" ToRole="Card" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_CustomerCard_Customer" FromRole="CustomerCard" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageAlt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProductImages" Relationship="Self.FK_ProductImage_Image1" FromRole="Image" ToRole="ProductImage" />
+  </EntityType>
+  <EntityType Name="Pricing">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="Rate" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Pricing_Product" FromRole="Pricing" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ShopId" Type="Int32" />
+    <Property Name="Price" Type="Int32" />
+    <NavigationProperty Name="Pricings" Relationship="Self.FK_Pricing_Product" FromRole="Product" ToRole="Pricing" />
+    <NavigationProperty Name="Shop" Relationship="Self.FK_Product_Shop" FromRole="Product" ToRole="Shop" />
+    <NavigationProperty Name="ProductCategories" Relationship="Self.FK_ProductCategory_Product" FromRole="Product" ToRole="ProductCategory" />
+    <NavigationProperty Name="ProductImages" Relationship="Self.FK_ProductImage_Product1" FromRole="Product" ToRole="ProductImage" />
+    <NavigationProperty Name="TicketProducts" Relationship="Self.FK_TicketProduct_Product" FromRole="Product" ToRole="TicketProduct" />
+    <NavigationProperty Name="TicketProducts1" Relationship="Self.FK_TicketProduct_Product1" FromRole="Product" ToRole="TicketProduct" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" />
+    <Property Name="CategoryId" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_ProductCategory_Category" FromRole="ProductCategory" ToRole="Category" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_ProductCategory_Product" FromRole="ProductCategory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductImage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImageId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <NavigationProperty Name="Image" Relationship="Self.FK_ProductImage_Image1" FromRole="ProductImage" ToRole="Image" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_ProductImage_Product1" FromRole="ProductImage" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_Shop" FromRole="Shop" ToRole="Product" />
+    <NavigationProperty Name="UserShops" Relationship="Self.FK_UserShop_Shop" FromRole="Shop" ToRole="UserShop" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Ticket_Customer" FromRole="Ticket" ToRole="Customer" />
+    <NavigationProperty Name="TicketProducts" Relationship="Self.FK_TicketProduct_Ticket" FromRole="Ticket" ToRole="TicketProduct" />
+  </EntityType>
+  <EntityType Name="TicketProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TicketId" Type="Int32" />
+    <Property Name="ProductId" Type="Int32" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_TicketProduct_Product" FromRole="TicketProduct" ToRole="Product" />
+    <NavigationProperty Name="Product1" Relationship="Self.FK_TicketProduct_Product1" FromRole="TicketProduct" ToRole="Product" />
+    <NavigationProperty Name="Ticket" Relationship="Self.FK_TicketProduct_Ticket" FromRole="TicketProduct" ToRole="Ticket" />
+  </EntityType>
+  <EntityType Name="Userr">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserShops" Relationship="Self.FK_UserShop_Userr" FromRole="Userr" ToRole="UserShop" />
+  </EntityType>
+  <EntityType Name="UserShop">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="ShopId" Type="Int32" />
+    <NavigationProperty Name="Shop" Relationship="Self.FK_UserShop_Shop" FromRole="UserShop" ToRole="Shop" />
+    <NavigationProperty Name="Userr" Relationship="Self.FK_UserShop_Userr" FromRole="UserShop" ToRole="Userr" />
+  </EntityType>
+  <Association Name="FK_CustomerCard_Card">
+    <End Role="Card" Type="Self.Card" Multiplicity="0..1" />
+    <End Role="CustomerCard" Type="Self.CustomerCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Card">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomerCard">
+        <PropertyRef Name="CardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCategory_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCard_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="CustomerCard" Type="Self.CustomerCard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomerCard">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductImage_Image1">
+    <End Role="Image" Type="Self.Image" Multiplicity="0..1" />
+    <End Role="ProductImage" Type="Self.ProductImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Image">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductImage">
+        <PropertyRef Name="ImageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pricing_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="Pricing" Type="Self.Pricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pricing">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Shop">
+    <End Role="Shop" Type="Self.Shop" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shop">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ShopId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductCategory_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductCategory">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductImage_Product1">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="ProductImage" Type="Self.ProductImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductImage">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TicketProduct_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="TicketProduct" Type="Self.TicketProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TicketProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TicketProduct_Product1">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="TicketProduct" Type="Self.TicketProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TicketProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserShop_Shop">
+    <End Role="Shop" Type="Self.Shop" Multiplicity="0..1" />
+    <End Role="UserShop" Type="Self.UserShop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shop">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserShop">
+        <PropertyRef Name="ShopId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TicketProduct_Ticket">
+    <End Role="Ticket" Type="Self.Ticket" Multiplicity="0..1" />
+    <End Role="TicketProduct" Type="Self.TicketProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ticket">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TicketProduct">
+        <PropertyRef Name="TicketId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserShop_Userr">
+    <End Role="Userr" Type="Self.Userr" Multiplicity="0..1" />
+    <End Role="UserShop" Type="Self.UserShop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userr">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserShop">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MarketEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cards" EntityType="Self.Card" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="CustomerCards" EntityType="Self.CustomerCard" />
+    <EntitySet Name="Images" EntityType="Self.Image" />
+    <EntitySet Name="Pricings" EntityType="Self.Pricing" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
+    <EntitySet Name="ProductImages" EntityType="Self.ProductImage" />
+    <EntitySet Name="Shops" EntityType="Self.Shop" />
+    <EntitySet Name="Tickets" EntityType="Self.Ticket" />
+    <EntitySet Name="TicketProducts" EntityType="Self.TicketProduct" />
+    <EntitySet Name="Userrs" EntityType="Self.Userr" />
+    <EntitySet Name="UserShops" EntityType="Self.UserShop" />
+    <AssociationSet Name="FK_CustomerCard_Card" Association="Self.FK_CustomerCard_Card">
+      <End Role="Card" EntitySet="Cards" />
+      <End Role="CustomerCard" EntitySet="CustomerCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCategory_Category" Association="Self.FK_ProductCategory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCard_Customer" Association="Self.FK_CustomerCard_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="CustomerCard" EntitySet="CustomerCards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_Customer" Association="Self.FK_Ticket_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Ticket" EntitySet="Tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductImage_Image1" Association="Self.FK_ProductImage_Image1">
+      <End Role="Image" EntitySet="Images" />
+      <End Role="ProductImage" EntitySet="ProductImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pricing_Product" Association="Self.FK_Pricing_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Pricing" EntitySet="Pricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Shop" Association="Self.FK_Product_Shop">
+      <End Role="Shop" EntitySet="Shops" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductCategory_Product" Association="Self.FK_ProductCategory_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductImage_Product1" Association="Self.FK_ProductImage_Product1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductImage" EntitySet="ProductImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TicketProduct_Product" Association="Self.FK_TicketProduct_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="TicketProduct" EntitySet="TicketProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TicketProduct_Product1" Association="Self.FK_TicketProduct_Product1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="TicketProduct" EntitySet="TicketProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserShop_Shop" Association="Self.FK_UserShop_Shop">
+      <End Role="Shop" EntitySet="Shops" />
+      <End Role="UserShop" EntitySet="UserShops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TicketProduct_Ticket" Association="Self.FK_TicketProduct_Ticket">
+      <End Role="Ticket" EntitySet="Tickets" />
+      <End Role="TicketProduct" EntitySet="TicketProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserShop_Userr" Association="Self.FK_UserShop_Userr">
+      <End Role="Userr" EntitySet="Userrs" />
+      <End Role="UserShop" EntitySet="UserShops" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

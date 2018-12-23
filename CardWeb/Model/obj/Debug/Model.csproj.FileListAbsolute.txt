@@ -1,0 +1,24 @@
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\Model.dll.config
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\Model.dll
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\Model.pdb
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\EntityFramework.dll
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\EntityFramework.xml
+C:\Users\muhar\source\repos\CardWeb\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhar\source\repos\CardWeb\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\muhar\source\repos\CardWeb\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\CardWeb\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\muhar\source\repos\CardWeb\Model\obj\Debug\Model.dll
+C:\Users\muhar\source\repos\CardWeb\Model\obj\Debug\Model.pdb
+F:\MVC Card\CardWeb\Model\bin\Debug\Model.dll.config
+F:\MVC Card\CardWeb\Model\bin\Debug\Model.dll
+F:\MVC Card\CardWeb\Model\bin\Debug\Model.pdb
+F:\MVC Card\CardWeb\Model\bin\Debug\EntityFramework.dll
+F:\MVC Card\CardWeb\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\MVC Card\CardWeb\Model\bin\Debug\EntityFramework.xml
+F:\MVC Card\CardWeb\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\MVC Card\CardWeb\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\MVC Card\CardWeb\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\MVC Card\CardWeb\Model\obj\Debug\Model.csproj.CopyComplete
+F:\MVC Card\CardWeb\Model\obj\Debug\Model.dll
+F:\MVC Card\CardWeb\Model\obj\Debug\Model.pdb

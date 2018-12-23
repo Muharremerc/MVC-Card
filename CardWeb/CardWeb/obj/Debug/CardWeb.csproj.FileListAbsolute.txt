@@ -1,0 +1,216 @@
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\ApplicationInsights.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\CardWeb.dll.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\CardWeb.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\CardWeb.pdb
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csc.exe
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csc.exe.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csc.rsp
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csi.exe
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csi.exe.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\csi.rsp
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.AppContext.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Console.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.IO.Pipes.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Claims.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\vbc.exe
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\vbc.exe.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\vbc.rsp
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Antlr3.Runtime.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.Web.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.ApplicationInsights.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Newtonsoft.Json.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Helpers.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Mvc.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Optimization.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Razor.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\WebGrease.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Helpers.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Mvc.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Optimization.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.Razor.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Newtonsoft.Json.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Antlr3.Runtime.pdb
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.AI.Web.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.Razor.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\obj\Debug\CardWeb.csprojAssemblyReference.cache
+C:\Users\muhar\source\repos\CardWeb\CardWeb\obj\Debug\CardWeb.csproj.CoreCompileInputs.cache
+C:\Users\muhar\source\repos\CardWeb\CardWeb\obj\Debug\CardWeb.csproj.CopyComplete
+C:\Users\muhar\source\repos\CardWeb\CardWeb\obj\Debug\CardWeb.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\obj\Debug\CardWeb.pdb
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\DAL.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\EntityFramework.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\EntityFramework.SqlServer.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Model.dll
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\DAL.pdb
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\DAL.dll.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Model.pdb
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\Model.dll.config
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\EntityFramework.xml
+C:\Users\muhar\source\repos\CardWeb\CardWeb\bin\EntityFramework.SqlServer.xml
+F:\MVC Card\CardWeb\CardWeb\bin\ApplicationInsights.config
+F:\MVC Card\CardWeb\CardWeb\bin\CardWeb.dll.config
+F:\MVC Card\CardWeb\CardWeb\bin\CardWeb.dll
+F:\MVC Card\CardWeb\CardWeb\bin\CardWeb.pdb
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csc.exe
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csc.exe.config
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csc.rsp
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csi.exe
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csi.exe.config
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\csi.rsp
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.AppContext.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Collections.Immutable.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Console.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.IO.Compression.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.IO.FileSystem.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.IO.Pipes.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Reflection.Metadata.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.AccessControl.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Claims.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Security.Principal.Windows.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.ValueTuple.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Xml.XPath.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\vbc.exe
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\vbc.exe.config
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\vbc.rsp
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\VBCSCompiler.exe
+F:\MVC Card\CardWeb\CardWeb\bin\roslyn\VBCSCompiler.exe.config
+F:\MVC Card\CardWeb\CardWeb\bin\Antlr3.Runtime.dll
+F:\MVC Card\CardWeb\CardWeb\bin\DAL.dll
+F:\MVC Card\CardWeb\CardWeb\bin\EntityFramework.dll
+F:\MVC Card\CardWeb\CardWeb\bin\EntityFramework.SqlServer.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.Agent.Intercept.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.DependencyCollector.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.Web.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.WindowsServer.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.ApplicationInsights.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.Web.Infrastructure.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Model.dll
+F:\MVC Card\CardWeb\CardWeb\bin\Newtonsoft.Json.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Diagnostics.DiagnosticSource.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Helpers.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Mvc.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Optimization.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Razor.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.Deployment.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.dll
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.Razor.dll
+F:\MVC Card\CardWeb\CardWeb\bin\WebGrease.dll
+F:\MVC Card\CardWeb\CardWeb\bin\DAL.pdb
+F:\MVC Card\CardWeb\CardWeb\bin\DAL.dll.config
+F:\MVC Card\CardWeb\CardWeb\bin\Model.pdb
+F:\MVC Card\CardWeb\CardWeb\bin\Model.dll.config
+F:\MVC Card\CardWeb\CardWeb\bin\EntityFramework.xml
+F:\MVC Card\CardWeb\CardWeb\bin\EntityFramework.SqlServer.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Helpers.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Mvc.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Optimization.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.Razor.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.Deployment.xml
+F:\MVC Card\CardWeb\CardWeb\bin\System.Web.WebPages.Razor.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Newtonsoft.Json.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Antlr3.Runtime.pdb
+F:\MVC Card\CardWeb\CardWeb\bin\System.Diagnostics.DiagnosticSource.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.DependencyCollector.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.WindowsServer.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.AI.Web.xml
+F:\MVC Card\CardWeb\CardWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.Helpers.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.Mvc.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.Optimization.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.Razor.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.WebPages.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.WebPages.Deployment.resources.dll
+F:\MVC Card\CardWeb\CardWeb\bin\tr\System.Web.WebPages.Razor.resources.dll
+F:\MVC Card\CardWeb\CardWeb\obj\Debug\CardWeb.csprojAssemblyReference.cache
+F:\MVC Card\CardWeb\CardWeb\obj\Debug\CardWeb.csproj.CoreCompileInputs.cache
+F:\MVC Card\CardWeb\CardWeb\obj\Debug\CardWeb.csproj.CopyComplete
+F:\MVC Card\CardWeb\CardWeb\obj\Debug\CardWeb.dll
+F:\MVC Card\CardWeb\CardWeb\obj\Debug\CardWeb.pdb

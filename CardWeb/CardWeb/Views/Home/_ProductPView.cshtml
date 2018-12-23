@@ -1,0 +1,107 @@
+﻿@model List<CardWeb.Models.ProductAndShopName>
+
+<div class="col-md-4">
+    <h2>Create Ticket</h2>
+    <p>
+        Name <input type="text" id="name" name="name" />
+    </p>
+    <p>
+        CardId <input type="text" id="cardId" name="name" />
+    </p>
+    <p><a class="btn btn-default" href="javascript:CreateTicket()">Add To Ticket</a></p>
+
+    <h2>Check Money</h2>
+    <p>
+        CarId <input type="text" id="cIdCheck" name="cIdCheck" />
+    </p>
+    <p><a class="btn btn-default" href="javascript:getCardMoney()">Add To Ticket</a></p>
+    <div id="money" name="money"></div>
+</div>
+
+@foreach (var item in Model)
+{
+<div class="col-md-4">
+    <h2>@item.P.Name</h2>
+    <p>
+        @if (item.Image == null)
+        {
+            <img src="./../Image/default.jpg" width="200" height="200">
+        }
+        else
+        {
+            <img src="./../Image/@item.Image" width="200" height="200">
+        }
+
+    </p>
+    <p> Price - @item.P.Price</p>
+    <p> ShopName - @item.ShopName</p>
+    <p><a class="btn btn-default" href="javascript:addToTicket(@item.P.Id)">Add To Ticket</a></p>
+</div>
+}
+<script>
+
+    function addToTicket(id) {
+        
+        $.ajax({
+            type: "POST",
+            url: '/Home/AddToTicket/' + id,
+            dataType: 'HTML',
+            success: function (data) {
+                alert(data);
+            },
+            error: function (data) {
+                alert('Error.');
+            }
+        })
+
+
+    }
+
+    function getCardMoney()
+    {
+        var data = {
+            c: $("#cIdCheck").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: '/Home/getCardMoney',
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            dataType: 'HTML',
+            success: function (data) {
+                $("#money").html(data);
+            },
+            error: function (data) {
+                alert('Error.');
+            }
+        })
+    }
+
+    function CreateTicket() {
+
+        var data = {
+            name: $("#name").val(),
+            cardId: $("#cardId").val()
+
+        };
+        
+
+        $.ajax({
+            url: "/Home/CreateTicket",
+            dataType: "json",
+            type: "POST",
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            processData: false,
+            success: function (data) {
+                alert(data);
+            }
+        })
+
+    }
+
+
+</script>
+
+

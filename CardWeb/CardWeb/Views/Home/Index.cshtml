@@ -1,0 +1,59 @@
+﻿@model List<Model.Category>
+@{
+
+}
+
+<div class="row" id="product">
+
+</div>
+
+
+@section Category
+{
+    @foreach (var item in Model)
+    {
+
+        <li><a href="javascript:getProductByCategoryId(@item.Id)">@item.Name</a></li>
+    }
+
+    <li><a href="javascript:getProductByTicketId()" style="border-left:inset">Satışı Bitir</a></li>
+    <li><a href="../Login/Index">Login </a></li>
+    <li><a href="../Create">Create Card </a></li>
+    <li><a href="../Create/Shop">Create User </a></li>
+}
+
+
+<script>
+
+
+    function getProductByCategoryId(id) {
+        $.ajax({
+            type: "POST",
+            url: '/Home/ProductPView/' + id,
+            dataType: 'HTML',
+            success: function (data) {
+                $("#product").html(data);
+            },
+            error: function (data) {
+                alert('Error.');
+            }
+        })
+    }
+    function getProductByTicketId() {
+        $.ajax({
+            type: "POST",
+            url: '/Home/getProductByTicketId/',
+            dataType: 'HTML',
+            success: function (data) {
+                $("#product").html(data);
+            },
+            error: function (data) {
+                alert('Error.');
+            }
+        })
+    }
+
+    getProductByCategoryId(0);
+
+
+</script>
